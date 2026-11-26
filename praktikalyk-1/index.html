@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Quiz — Онлайн тест</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="IT Quiz басты бет">
+        <span class="brand-mark">Q</span>
+        <span>IT<span class="brand-accent">QUIZ</span></span>
+      </a>
+      <span class="tag">ПРАКТИКАЛЫҚ ЖҰМЫС №1</span>
+    </header>
+    <section class="intro">
+      <p class="eyebrow">БІЛІМІҢДІ СЫНАП КӨР</p>
+      <h1>IT сауаттылығы<br><span>бойынша онлайн тест</span></h1>
+      <p class="intro-text">Компьютер, интернет және веб-технологиялар туралы біліміңді тексер. Әр сұраққа бір дұрыс жауап таңда.</p>
+    </section>
+    <section class="quiz-card" aria-live="polite">
+      <div class="quiz-meta">
+        <span id="question-counter">1 / 5 сұрақ</span>
+        <span class="level">БАСТАПҚЫ ДЕҢГЕЙ</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+      <div id="quiz-area">
+        <h2 id="question">HTML нені білдіреді?</h2>
+        <div id="answers" class="answers"></div>
+        <p id="feedback" class="feedback" role="status"></p>
+        <div class="card-footer">
+          <span class="hint">Бір ғана дұрыс жауапты таңдаңыз</span>
+          <button id="next-btn" class="primary-btn" disabled>Келесі сұрақ <span>→</span></button>
+        </div>
+      </div>
+      <div id="result-area" class="result-area hidden">
+        <div class="result-icon">✓</div>
+        <p class="eyebrow">ТЕСТ АЯҚТАЛДЫ</p>
+        <h2>Жарайсың!</h2>
+        <p class="result-caption">Сенің нәтижең:</p>
+        <div class="score"><span id="score">0</span><small>/ 5</small></div>
+        <p id="result-message" class="result-message"></p>
+        <button id="restart-btn" class="primary-btn">Қайта өту <span>↻</span></button>
+      </div>
+    </section>
+    <footer>
+      <span>© 2026 IT Quiz</span>
+      <span>HTML · CSS · JavaScript арқылы жасалған</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
